@@ -1,234 +1,220 @@
-# Amazon Bestsellers Data Analysis with Pandas
+# Amazon Bestsellers Data-analyse met Pandas
 
-A comprehensive data analysis project examining Amazon's bestselling books from 2009-2019 using Python and Pandas.
+Een uitgebreid data-analyseproject dat de bestsellers van Amazon uit 2009-2019 onderzoekt met behulp van Python en Pandas.
 
-## Project Overview
+## Projectoverzicht
 
-This project analyzes a dataset of Amazon bestselling books spanning 11 years (2009-2019). The analysis explores various aspects including:
+Dit project analyseert een dataset van Amazon-bestsellers over een periode van 11 jaar (2009-2019). De analyse onderzoekt verschillende aspecten, waaronder:
 
-- **Genre Distribution**: Fiction vs Non-Fiction trends
-- **Price Analysis**: Pricing patterns and trends over time
-- **Rating Analysis**: User rating distributions and correlations
-- **Author Insights**: Most prolific and popular authors
-- **Temporal Trends**: Year-by-year changes in the book market
+- **Genreverdeling**: Trends in fictie versus non-fictie
+- **Prijsanalyse**: Prijspatronen en trends in de loop der tijd
+- **Beoordelingsanalyse**: Verdelingen en correlaties van gebruikersbeoordelingen
+- **Inzichten van auteurs**: Meest productieve en populaire auteurs
+- **Tijdelijke trends**: Veranderingen van jaar tot jaar in de boekenmarkt
 
 ## Dataset
 
-**File**: `bestsellers.csv`
+**Bestand**: `bestsellers.csv`
 
-**Structure**:
-- **Name**: Book title
-- **Author**: Book author
-- **User Rating**: Average rating (0-5 scale)
-- **Reviews**: Number of user reviews
-- **Price**: Book price in USD
-- **Year**: Year of bestseller listing (2009-2019)
-- **Genre**: Fiction or Non Fiction
+**Structuur**:
+- **Naam**: Boektitel
+- **Auteur**: Auteur
+- **Gebruikersbeoordeling**: Gemiddelde beoordeling (schaal van 0 tot 5)
+- **Recensies**: Aantal gebruikersrecensies
+- **Prijs**: Boekprijs in USD
+- **Jaar**: Jaar van bestsellervermelding (2009-2019)
+- **Genre**: Fictie of non-fictie
 
-**Size**: 550 entries (books)
+**Omvang**: 550 items (boeken)
 
-## Getting Started
 
-### Prerequisites
+### Vereisten
 
-- Python 3.7 or higher
-- pip package manager
+- Python 3.7 of hoger
+- pip pakketbeheerder
 
-### Installation
+### Installatie
 
-1. **Clone the repository**:
+1. **Kloon de repository**:
 ```bash
-git clone https://github.com/yourusername/amazon-bestsellers-analysis.git
+git clone https://github.com/uwgebruikersnaam/amazon-bestsellers-analysis.git
 cd amazon-bestsellers-analysis
 ```
 
-2. **Install dependencies**:
+2. **Installeer afhankelijkheden**:
 ```bash
 pip install -r requirements.txt
 ```
 
-3. **Ensure the dataset is in the project directory**:
-```
-amazon-bestsellers-analysis/
-├── bestsellers.csv         # Your dataset
-├── analyze_bestsellers.py  # Main analysis script
-├── requirements.txt        # Dependencies
-└── README.md              # This file
-```
 
-### Running the Analysis
+### Uitvoeren van de Analyse
 
-Execute the main script:
+Voer het hoofdscript uit:
 
 ```bash
 python analyze_bestsellers.py
 ```
 
-The script will:
-1. Load the data
-2. Perform comprehensive analysis
-3. Display results in the terminal
-4. Generate a summary file (`analysis_summary.txt`)
+Het script zal:
+1. De gegevens laden
+2. Een uitgebreide analyse uitvoeren
+3. De resultaten weergeven in de terminal
+4. Een samenvattingsbestand genereren (`analysis_summary.txt`)
 
-##  Analysis Features
+## Analysefuncties
 
-### 1. Data Exploration
-- Dataset dimensions and structure
-- Data types and missing values
-- Duplicate detection
+### 1. Gegevensverkenning
+- Datasetdimensies en -structuur
+- Gegevenstypen en ontbrekende waarden
+- Duplicaatdetectie
 
-### 2. Statistical Summary
-- Descriptive statistics for all numerical columns
-- Mean, median, min, max, and standard deviation
-- Price, rating, and review statistics
+### 2. Statistische samenvatting
+- Beschrijvende statistieken voor alle numerieke kolommen
+- Gemiddelde, mediaan, minimum, maximum en standaarddeviatie
+- Prijs-, beoordelings- en recensiestatistieken
 
-### 3. Genre Analysis
-- Distribution of Fiction vs Non-Fiction
-- Average prices by genre
-- Average ratings by genre
-- Review counts by genre
+### 3. Genreanalyse
+- Verdeling fictie versus non-fictie
+- Gemiddelde prijzen per genre
+- Gemiddelde beoordelingen per genre
+- Aantal recensies per genre
 
-### 4. Top Books and Authors
-- Most reviewed books
-- Highest-rated books
-- Most prolific authors
-- Most expensive books
+### 4. Topboeken en auteurs
+- Meest gerecenseerde boeken
+- Hoogst gewaardeerde boeken
+- Meest productieve auteurs
+- Duurste boeken
 
-### 5. Year-by-Year Analysis
-- Books published per year
-- Price trends over time
-- Rating trends over time
-- Genre distribution changes
+### 5. Jaar-op-jaar analyse
+- Boeken gepubliceerd per jaar
+- Prijsontwikkelingen in de loop der tijd
+- Beoordelingstrends in de loop der tijd
+- Veranderingen in genreverdeling
 
-### 6. Price Analysis
-- Price range distributions
-- Common price points
-- Price by genre and year
+### 6. Prijsanalyse
+- Prijsklasseverdelingen
+- Veelvoorkomende prijspunten
+- Prijs per genre en jaar
 
-### 7. Rating Analysis
-- Rating distribution with visual bars
-- Perfect 4.9-rated books
-- Lowest-rated books
+### 7. Beoordelingsanalyse
+- Beoordelingsverdeling met visuele balken
+- Boeken met een perfecte beoordeling van 4,9
+- Boeken met de laagste beoordeling
 
-### 8. Correlation Analysis
-- Relationships between variables
-- Price vs ratings
-- Reviews vs ratings
-- Temporal correlations
+### 8. Correlatieanalyse
+- Relaties tussen variabelen
+- Prijs versus beoordelingen
+- Recensies versus beoordelingen
+- Tijdelijke correlaties
 
-### 9. Key Insights
-- Automated insight generation
-- Market trend identification
-- Summary statistics
+### 9. Belangrijkste inzichten
+- Geautomatiseerde generatie van inzichten
+- Identificatie van markttrends
+- Samenvattende statistieken
 
-## Sample Output
+## Voorbeelduitvoer
 
 ```
- AMAZON BESTSELLERS DATA ANALYSIS (2009-2019)
-======================================================================
+DATA-ANALYSE VAN AMAZON BESTSELLERS (2009-2019)
+========================================================================
 
- Loading Amazon Bestsellers Data...
- Successfully loaded 550 records
+Gegevens van Amazon Bestsellers laden...
+Succesvol geladen 550 records
 
-======================================================================
- DATA EXPLORATION
-======================================================================
+=======================================================================
+GEGEVENSVERKENNING
+=========================================================================
 
-1️ Dataset Shape:
-   Rows: 550
-   Columns: 7
+1️ Datasetvorm:
+Rijen: 550
+Kolommen: 7
 
-2️ Column Names and Types:
-   Name           object
-   Author         object
-   User Rating    float64
-   Reviews        int64
-   Price          int64
-   Year           int64
-   Genre          object
+2️ Kolomnamen en -typen:
+Naam object
+Auteur object
+Gebruikersbeoordeling float64
+Reviews int64
+Prijs int64
+Jaar int64
+Genre object
 
 ...
 ```
 
+## Gebruikte technologieën
 
-##  Technologies Used
+- **Python 3.x**: Kernprogrammeertaal
+- **Pandas**: Datamanipulatie en -analyse
+- **NumPy**: Numerieke berekeningen
+- **Ingebouwde bibliotheken**: datum/tijd, waarschuwingen
 
-- **Python 3.x**: Core programming language
-- **Pandas**: Data manipulation and analysis
-- **NumPy**: Numerical computations
-- **Built-in libraries**: datetime, warnings
+## Belangrijkste bevindingen
 
-##  Key Findings
+Na het uitvoeren van de analyse ontdekt u inzichten zoals:
 
-After running the analysis, you'll discover insights such as:
+- De populairste genres van de afgelopen tien jaar
+- Prijstrends op de boekenmarkt
+- Correlatie tussen recensies en beoordelingen
+- Meest succesvolle auteurs en titels
+- Veranderingen in consumentenvoorkeuren in de loop der tijd
 
-- The most popular genres over the decade
-- Price trends in the book market
-- Correlation between reviews and ratings
-- Most successful authors and titles
-- Changes in consumer preferences over time
+## Code Walkthrough
 
-##  Code Walkthrough
+### Belangrijkste functies
 
-### Main Functions
+1. **`load_data(bestandspad)`**: Laadt CSV-gegevens in een Pandas DataFrame
+2. **`explore_data(df)`**: Initiële dataverkenning en -validatie
+3. **`statistical_summary(df)`**: Genereert uitgebreide statistieken
+4. **`genre_analysis(df)`**: Analyseert boeken op genre
+5. **`top_books_and_authors(df)`**: Identificeert toppresteerders
+6. **`year_analysis(df)`**: Onderzoekt tijdstrends
+7. **`price_analysis(df)`**: Gedetailleerde prijsspecificatie
+8. **`rating_analysis(df)`**: Analyse van beoordelingsverdeling
+9. **`correlation_analysis(df)`**: Variabele correlaties
+10. **`generate_insights(df)`**: Geautomatiseerde generatie van inzichten
+11. **`export_summary(df)`**: Exporteert bevindingen naar een tekstbestand
 
-1. **`load_data(filepath)`**: Loads CSV data into a Pandas DataFrame
-2. **`explore_data(df)`**: Initial data exploration and validation
-3. **`statistical_summary(df)`**: Generates comprehensive statistics
-4. **`genre_analysis(df)`**: Analyzes books by genre
-5. **`top_books_and_authors(df)`**: Identifies top performers
-6. **`year_analysis(df)`**: Examines temporal trends
-7. **`price_analysis(df)`**: Detailed price breakdown
-8. **`rating_analysis(df)`**: Rating distribution analysis
-9. **`correlation_analysis(df)`**: Variable correlations
-10. **`generate_insights(df)`**: Automated insight generation
-11. **`export_summary(df)`**: Exports findings to text file
-
-### Analysis Flow
+### Analysestroom
 
 ```python
 df = load_data('bestsellers.csv')
-    ↓
+↓
 explore_data(df)
-    ↓
+↓
 statistical_summary(df)
-    ↓
-[Multiple Analysis Functions]
-    ↓
+↓
+[Meerdere analysefuncties]
+↓
 export_summary(df)
 ```
 
-##  Output Files
+## Uitvoerbestanden
 
-- **`analysis_summary.txt`**: Text file containing key findings and statistics
+- **`analysis_summary.txt`**: Tekstbestand met de belangrijkste bevindingen en statistieken
 
-##  Contributing
+## Bijdragen
 
-Contributions are welcome! To contribute:
+Bijdragen zijn welkom! Bijdragen:
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-
+1. Fork de repository
+2. Maak een feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit je wijzigingen (`git commit -m 'Add some AmazingFeature'`)
+4. Push naar de branch (`git push origin feature/AmazingFeature`)
+5. Open een Pull Request
 
 ## 📧 Contact
 
 Soufiane Tarifit ~ Soufiane.tarifit@gmail.com
 
-Project Link: [https://github.com/soufiane-1080302/amazon-bestsellers-analyzer](https://github.com/soufiane-1080302/amazon-bestsellers-analyzer)
+Projectlink: [https://github.com/soufiane-1080302/amazon-bestsellers-analyzer](https://github.com/soufiane-1080302/amazon-bestsellers-analyzer)
 
+## Dankbetuiging
 
+- Dataset afkomstig uit Kaggle's Amazon Bestsellers-dataset
+- Geïnspireerd door tutorials over data-analyse van Codedex.io
+- Gebouwd als onderdeel van een portfolioproject voor het demonstreren van data-analysevaardigheden
 
-##  Acknowledgments
-
-- Dataset sourced from Kaggle's Amazon Bestsellers dataset
-- Inspired by data analysis tutorials from Codedex.io
-- Built as part of a portfolio project for data analysis skills demonstration
-
-## References
+## Bronvermelding
 
 - [Panda's Documentatie](https://pandas.pydata.org/docs/)
 - [Python-gegevensanalyse](https://www.python.org/)
